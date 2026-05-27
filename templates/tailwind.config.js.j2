@@ -1,0 +1,16 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        primary: "{{ data.primary_colors[0] if data.primary_colors else '#3b82f6' }}",
+        secondary: "{{ data.primary_colors[1] if data.primary_colors|length > 1 else '#1e40af' }}",
+      },
+    },
+  },
+  plugins: [],
+}

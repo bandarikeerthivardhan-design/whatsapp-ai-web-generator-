@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Visuals | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFFFFF',
+                        secondary: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bg-gradient-mesh {
+            background-color: #f8fafc;
+            background-image:
+                radial-gradient(at 0% 0%, rgba(59, 130, 246, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(147, 51, 234, 0.15) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+    <div class="bg-gradient-mesh min-h-screen">
+        <!-- Navigation -->
+        <nav class="sticky top-0 z-50 backdrop-blur-md bg-opacity-70 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary/20">
+                        S
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tight">Skyline Visuals</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    
+                    <a href="#" class="font-medium hover:text-primary transition-colors text-sm uppercase tracking-wider">Home</a>
+                    
+                    <a href="#" class="font-medium hover:text-primary transition-colors text-sm uppercase tracking-wider">Gallery</a>
+                    
+                    <a href="#" class="font-medium hover:text-primary transition-colors text-sm uppercase tracking-wider">About</a>
+                    
+                    <a href="#" class="font-medium hover:text-primary transition-colors text-sm uppercase tracking-wider">Contact</a>
+                    
+                    <a href="#contact" class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-bold hover:shadow-lg hover:shadow-primary/30 transition-all active:scale-95">
+                        Explore Portfolio
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative z-10">
+                    <span class="inline-block py-1 px-4 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                        Welcome to Skyline Visuals
+                    </span>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-8">
+                        Capturing the Essence of Space and Light
+                    </h1>
+                    <p class="text-xl opacity-70 mb-10 leading-relaxed max-w-xl">
+                        A high-end photography portfolio dedicated to minimalist aesthetics, architectural precision, and visual storytelling.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-primary text-white px-8 py-4 rounded-2xl text-lg font-bold shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all">
+                            Explore Portfolio
+                        </a>
+                        <a href="#features" class="px-8 py-4 rounded-2xl text-lg font-bold border border-slate-200 hover:bg-white/5 transition-all">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-20 -right-20 w-96 h-96 bg-primary/20 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-[2.5rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700 border-8 border-white">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop" alt="Hero" class="w-full h-[500px] object-cover scale-105 hover:scale-100 transition-transform duration-700" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-24 px-6 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Why Choose Us</h2>
+                    <p class="text-lg opacity-60">Everything you need to grow your portfolio with excellence and style.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="group p-10 rounded-[2rem] border transition-all duration-500 hover:-translate-y-2 bg-slate-50 border-slate-100 hover:border-primary/50 hover:bg-white">
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 text-white shadow-lg shadow-primary/20">
+                            <span class="text-xl font-black">1</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Interactive Gallery</h3>
+                        <p class="opacity-60 leading-relaxed">
+                            Exquisite high-resolution galleries showcasing architectural and landscape masterpieces.
+                        </p>
+                    </div>
+                    
+                    <div class="group p-10 rounded-[2rem] border transition-all duration-500 hover:-translate-y-2 bg-slate-50 border-slate-100 hover:border-primary/50 hover:bg-white">
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 text-white shadow-lg shadow-primary/20">
+                            <span class="text-xl font-black">2</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Image Lightbox</h3>
+                        <p class="opacity-60 leading-relaxed">
+                            A clean, distraction-free interface designed to elevate visual appreciation.
+                        </p>
+                    </div>
+                    
+                    <div class="group p-10 rounded-[2rem] border transition-all duration-500 hover:-translate-y-2 bg-slate-50 border-slate-100 hover:border-primary/50 hover:bg-white">
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 text-white shadow-lg shadow-primary/20">
+                            <span class="text-xl font-black">3</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Contact Form</h3>
+                        <p class="opacity-60 leading-relaxed">
+                            Tailored photography services for luxury brands, architects, and editorial features.
+                        </p>
+                    </div>
+                    
+                    <div class="group p-10 rounded-[2rem] border transition-all duration-500 hover:-translate-y-2 bg-slate-50 border-slate-100 hover:border-primary/50 hover:bg-white">
+                        <div class="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mb-8 text-white shadow-lg shadow-primary/20">
+                            <span class="text-xl font-black">4</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Social Media Integration</h3>
+                        <p class="opacity-60 leading-relaxed">
+                            Experience unmatched quality and professional service tailored to your needs.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-24 px-6">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-block p-3 rounded-2xl bg-primary/10 text-primary mb-8">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-10 leading-tight">About Skyline Visuals</h2>
+                <div class="text-xl opacity-70 leading-relaxed space-y-6">
+                    Skyline Visuals is a boutique photography studio specializing in high-end architectural and landscape imagery. With a commitment to minimalism and precision, we capture the silent dialogue between structure, light, and space.
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 bg-slate-100">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8">Let's Connect</h2>
+                    <p class="text-lg opacity-60 mb-12">Ready to start your journey with Skyline Visuals? Get in touch with us today.</p>
+
+                    <div class="space-y-8">
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase font-bold tracking-widest opacity-40">Email Us</p>
+                                <p class="text-lg font-semibold">contact@skylinevisuals.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div class="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase font-bold tracking-widest opacity-40">Call Us</p>
+                                <p class="text-lg font-semibold">+1 (555) 839-2001</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="p-10 rounded-[2.5rem] bg-white text-slate-900 shadow-2xl space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold opacity-50 uppercase tracking-widest">Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full px-5 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-primary/20 outline-none transition-all">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-bold opacity-50 uppercase tracking-widest">Email</label>
+                            <input type="email" placeholder="john@example.com" class="w-full px-5 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-primary/20 outline-none transition-all">
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="text-sm font-bold opacity-50 uppercase tracking-widest">Message</label>
+                        <textarea rows="4" placeholder="How can we help you?" class="w-full px-5 py-4 bg-slate-50 rounded-2xl border-none focus:ring-2 focus:ring-primary/20 outline-none transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-5 bg-primary text-white rounded-2xl text-lg font-bold shadow-lg shadow-primary/30 hover:-translate-y-1 transition-all">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-16 px-6 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white font-bold">
+                            S
+                        </div>
+                        <span class="text-lg font-bold">Skyline Visuals</span>
+                    </div>
+                    <p class="opacity-50 max-w-sm">© 2024 Skyline Visuals. All rights reserved.</p>
+                </div>
+                <div class="flex gap-8">
+                    <a href="#" class="opacity-40 hover:opacity-100 transition-opacity">Twitter</a>
+                    <a href="#" class="opacity-40 hover:opacity-100 transition-opacity">Instagram</a>
+                    <a href="#" class="opacity-40 hover:opacity-100 transition-opacity">LinkedIn</a>
+                </div>
+            </div>
+            <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between text-xs uppercase tracking-widest font-bold opacity-30 gap-6">
+                <p>&copy; 2026 Skyline Visuals AI. All rights reserved.</p>
+                <div class="flex gap-8">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

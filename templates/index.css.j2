@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: {{ data.primary_colors[0] if data.primary_colors else '#3b82f6' }};
+}
+
+body {
+  @apply bg-white text-gray-900;
+  {% if 'dark' in data.theme.lower() %}
+  @apply bg-slate-900 text-white;
+  {% endif %}
+}

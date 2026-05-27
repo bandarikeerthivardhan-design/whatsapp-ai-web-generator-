@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #D62828;
+}
+
+body {
+  @apply bg-white text-gray-900;
+  
+}
