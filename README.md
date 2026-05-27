@@ -67,5 +67,5 @@ python main.py
 - **Custom Domains:** Automated mapping via Netlify/Cloudflare API.
 
 ---
-**Demo Video:** [Link to your video here]
-**Developer:** [Your Name]
+**Demo Video:** [https://drive.google.com/file/d/1gRn5RxU5P2rlHd25K_MEH4UVOKvGm993/view?usp=drive_link]
+**Developer:** [keerthivardhan]
