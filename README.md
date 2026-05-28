@@ -12,6 +12,29 @@ The goal is to build a zero-friction website builder. A user sends a simple mess
 - **Site Engine:** React + Tailwind CSS (via Jinja2 Templating)
 - **Deployment:** Netlify API
 - **Tooling:** Uvicorn, Pydantic, Requests
+- ## 🏗️ System Architecture
+
+The system follows a modular event-driven architecture to ensure high performance and scalability.
+
+### **Data Flow Overview**
+1. **Inbound Trigger:** User sends a natural language prompt via WhatsApp.
+2. **Webhook Tunneling:** **Twilio** receives the message and forwards it via a **Localtunnel** webhook to the local **FastAPI** server.
+3. **AI Orchestration:** The backend sends the prompt to **Google Gemini 2.0**. It performs:
+   - **Requirement Extraction:** Converts text to a structured JSON blueprint.
+   - **Content Generation:** Writes marketing copy, headers, and descriptions.
+4. **Site Engine:** A custom **Jinja2** engine injects the AI-generated JSON into modern **Tailwind CSS/HTML** templates.
+5. **Automated Deployment:** The system zips the generated site and pushes it to **Netlify** via its REST API.
+6. **Outbound Notification:** The backend receives a live URL from Netlify and sends it back to the user via **Twilio WhatsApp API**.
+
+### **Module Breakdown**
+- `main.py`: The central FastAPI controller and endpoint manager.
+- `src/ai/`: Handles communication with Google Gemini and prompt engineering.
+- `src/generator/`: The "Engine" that builds the physical files from AI data.
+- `src/deployment/`: Manages automated cloud uploads to Netlify.
+- `src/whatsapp/`: Manages the Twilio messaging lifecycle.
+- `templates/`: Professional-grade Jinja2 templates for various business niches.
+
+---
 
 ## 🚀 Setup Instructions
 
